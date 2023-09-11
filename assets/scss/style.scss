@@ -1,0 +1,38 @@
+@use "vars/vars" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background: $clr-bg;
+    color: $clr-txt;
+    font-family: $font-family;
+    font-size: $fs-200;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: $fs-900;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    background: radial-gradient(circle at 50%, #ffee0011, #000 25%);
+}
